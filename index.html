@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uvend - Digital Wallet & Payment Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-wallet"></i>
+                <span>Uvend</span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Uvend</h1>
+                <p class="hero-subtitle">Your trusted digital wallet for seamless payments and financial management</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('download')">
+                        <i class="fas fa-download"></i>
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="status-bar"></div>
+                                <div class="app-title">Uvend Wallet</div>
+                            </div>
+                            <div class="app-content">
+                                <div class="balance-card">
+                                    <div class="balance-amount">$1,234.56</div>
+                                    <div class="balance-label">Available Balance</div>
+                                </div>
+                                <div class="quick-actions">
+                                    <div class="action-btn">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>Send</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>Receive</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <i class="fas fa-qrcode"></i>
+                                        <span>Scan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Why Choose Uvend?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Safe</h3>
+                    <p>Bank-level security with encryption and biometric authentication to protect your funds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Transactions</h3>
+                    <p>Instant payments and transfers with real-time processing and confirmation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Access</h3>
+                    <p>Send and receive money worldwide with competitive exchange rates and low fees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p>Track your spending, set budgets, and get insights into your financial habits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section with QR Codes -->
+        <section id="download" class="download">
+            <h2>Download Uvend Wallet</h2>
+            <p class="download-subtitle">Scan the QR codes below to download the Uvend wallet app</p>
+            
+            <div class="qr-container">
+                <div class="qr-card">
+                    <h3>Uvend Wallet</h3>
+                    <p>Access your digital wallet on any device</p>
+                    <div class="qr-code" id="wallet-qr">
+                        <img src="Uvend_Wallet.png" alt="Uvend Web Wallet QR" style="width: 180px; height: 180px; display: block; margin: 0 auto;" />
+                    </div>
+                </div>
+                
+                <div class="qr-card">
+                    <h3>Uvend Wallet APK</h3>
+                    <p>Download the Android app directly</p>
+                    <a href="Uvend_Wallet_V1.1.0.apk" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i>
+                        Download APK
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-info">
+                <div class="info-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Mobile App</h4>
+                    <p>Available on iOS and Android</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-desktop"></i>
+                    <h4>Web Wallet</h4>
+                    <p>Access from any browser</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-sync"></i>
+                    <h4>Sync Across Devices</h4>
+                    <p>Your data stays in sync</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>help@uvend.co.za</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telephone & WhatsApp:</h4>
+                            <p>083-314-7484</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>CAPE TOWN: 220 Ottery Service Road<br>Ottery, Cape Town, 7941</p>
+                            <p>      </p>
+                            <p>JOHANNESBURG: Energy House, Unit 8, 197 Smit St, Fairland <br> Randburg, Gauteng, 1923</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-wallet"></i>
+                        <span>Uvend</span>
+                    </div>
+                    <p>Your trusted partner for digital payments and financial management.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Uvend. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
